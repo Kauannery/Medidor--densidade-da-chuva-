@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 app.use(bodyParser.json());
 
 // Servir arquivos estáticos da pasta 'public' do React
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Rota para lidar com as solicitações de dados de volumetria de chuva
 app.post('/api/rainfall', (req, res) => {
@@ -23,7 +23,7 @@ app.post('/api/rainfall', (req, res) => {
 
 // Rota para servir a aplicação React
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Iniciar o servidor
