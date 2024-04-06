@@ -1,6 +1,8 @@
 // App.js
 import React, { useState } from 'react';
 import axios from 'axios';
+import api from './services/api';
+
 
 function App() {
   const [rainfallData, setRainfallData] = useState([]);
