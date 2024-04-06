@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Projeto de Auxílio à Tomada de Decisão na Indústria baseado em calcular a intensidade de chuva (Indpustri Agrária)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## #REACT.JS #NODE.JS #JS #API
 
-## Available Scripts
+# Objetivo do Projeto
+O objetivo principal deste projeto é facilitar o acesso e a análise dos dados de volumetria de chuva coletados pelos sensores da PredictWeather. Através desta aplicação, os usuários podem visualizar as medições de chuva em tempo real e enviar novas medições para análise.
 
-In the project directory, you can run:
+Desafio de Desenvolvimento BackEnd:
+Objetivo:
+Realizar a integração de sistemas, através de uma plataforma colaborativa de cadastro de
+dispositivos IoT, para fornecimento de insights para tomada de decisão de plantio
 
-### `npm start`
+# Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Front-end:
+React: Utilizado para a construção da interface do usuário (UI).
+HTML/CSS: Para a estruturação e estilização da interface.
+Axios: Biblioteca para realizar requisições HTTP para o backend.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Processo interno:
+Server.js: Arquivo principal do servidor Node.js que define as rotas da API 
+routes/api.js: Arquivo que contém as definições das rotas da API para manipular os dados de volumetria de chuva.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## index.html:
+Este arquivo é a página inicial da sua aplicação web.
+Ele contém a estrutura básica do documento HTML, incluindo tags como <html></html>, <head> e <body>.
+Geralmente, é onde você inclui links para seus arquivos de estilo CSS, scripts JavaScript e outros recursos necessários para sua aplicação.
+No contexto de uma aplicação React, o arquivo index.html é o ponto de entrada onde o aplicativo React é montado usando a tag id "root"
 
-### `npm run build`
+## App.js:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este arquivo é um componente React que define a estrutura e o comportamento da parte visual da sua aplicação.
+Ele Contém elementos JSX (JavaScript XML) que definem a interface do usuário, como formulários, botões e listas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Além disso, o App.js também contém lógica de manipulação de estado, como a definição de estados usando o hook useState() e a definição de efeitos usando o hook 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Server.js:
+Este arquivo é responsável por definir e configurar o servidor para sua aplicação web.
+Ele pode utilizar o Node.js e o framework Express.js para criar um servidor HTTP que escuta por requisições HTTP de clientes.
+O server.js define rotas para manipular diferentes tipos de requisições HTTP, como GET, POST, PUT e DELETE.
